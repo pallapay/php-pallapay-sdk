@@ -1,0 +1,23 @@
+{
+    "name": "pallapay/php-pallapay-sdk",
+    "type": "library",
+    "description": "Pallapay PHP SDK to accept crypto currency payments.",
+    "license": "MIT",
+    "keywords": ["pallapay", "bitcoin", "crypto", "payment", "gateway"],
+    "authors": [
+        {
+            "name": "Pallapay Development Team",
+            "email": "development@pallapay.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Pallapay\\PallapaySDK\\": "./src/"
+        }
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "guzzlehttp/guzzle": "^7.2",
+        "ext-json": "*"
+    }
+}
