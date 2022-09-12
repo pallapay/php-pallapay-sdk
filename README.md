@@ -79,6 +79,7 @@ if ($ipnData->isValid('MERCHANT_PASSWORD') && $ipnData->isPaid()) {
 | getItemName     | Get item name                                                                                                            |
 | getCustom       | Get custom data that you sent for create payment                                                                         |
 | getHash         | Get encrypted hash to check validity of IPN request (Note: You can check by yourself or you can check by isValid method) |
+| getOrderId      | Get your payment order ID                                                                                                |
 
 #### Supported currencies
 

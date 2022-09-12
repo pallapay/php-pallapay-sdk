@@ -73,6 +73,11 @@ class IpnData
     private string $itemName;
 
     /**
+     * @var string $orderId
+     */
+    private string $orderId;
+
+    /**
      * @var mixed|null $custom
      */
     private $custom;
@@ -97,9 +102,10 @@ class IpnData
      * @param string $balance
      * @param string $itemName
      * @param string $hash
+     * @param string $orderId
      * @param $custom
      */
-    function __construct(string $amount, string $fee, string $total, string $currency, string $payer, string $receiver, string $status, string $date, string $transferId, string $merchantName, string $merchantId, string $balance, string $itemName, string $hash, $custom = null) {
+    function __construct(string $amount, string $fee, string $total, string $currency, string $payer, string $receiver, string $status, string $date, string $transferId, string $merchantName, string $merchantId, string $balance, string $itemName, string $hash, string $orderId, $custom = null) {
         $this->amount = $amount;
         $this->fee = $fee;
         $this->total = $total;
@@ -114,6 +120,7 @@ class IpnData
         $this->balance = $balance;
         $this->itemName = $itemName;
         $this->hash = $hash;
+        $this->orderId = $orderId;
         $this->custom = $custom;
     }
 
@@ -259,5 +266,12 @@ class IpnData
      */
     public function getHash(): string {
         return $this->hash;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOrderId(): string {
+        return $this->orderId;
     }
 }
