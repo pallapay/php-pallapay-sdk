@@ -76,6 +76,7 @@ class Payment extends Request
             $postData['balance'],
             $postData['item_name'],
             $postData['hash'],
+            $postData['order'],
             $postData['custom'] ?? null
         );
     }
