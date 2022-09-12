@@ -145,21 +145,22 @@ class IpnData
      */
     public function getAll(): array {
         return [
-            'amount' => $this->getAmount(),
-            'fee' => $this->getFee(),
-            'total' => $this->getTotal(),
-            'currency' => $this->getCurrency(),
-            'payer' => $this->getPayer(),
-            'receiver' => $this->getReceiver(),
-            'status' => $this->getStatus(),
-            'date' => $this->getDate(),
-            'transferId' => $this->getTransferId(),
+            'amount'       => $this->getAmount(),
+            'fee'          => $this->getFee(),
+            'total'        => $this->getTotal(),
+            'currency'     => $this->getCurrency(),
+            'payer'        => $this->getPayer(),
+            'receiver'     => $this->getReceiver(),
+            'status'       => $this->getStatus(),
+            'date'         => $this->getDate(),
+            'transferId'   => $this->getTransferId(),
             'merchantName' => $this->getMerchantName(),
-            'merchantId' => $this->getMerchantId(),
-            'balance' => $this->getBalance(),
-            'itemName' => $this->getItemName(),
-            'hash' => $this->getHash(),
-            'custom' => $this->getCustom()
+            'merchantId'   => $this->getMerchantId(),
+            'balance'      => $this->getBalance(),
+            'itemName'     => $this->getItemName(),
+            'hash'         => $this->getHash(),
+            'orderId'      => $this->getOrderId(),
+            'custom'       => $this->getCustom()
         ];
     }
 
